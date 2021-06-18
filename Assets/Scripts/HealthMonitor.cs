@@ -6,26 +6,26 @@ public class HealthMonitor : MonoBehaviour {
 
     public static int HealthValue;
     public int InternalHealth;
-    public GameObject Heart1;
-    public GameObject Heart2;
-    public GameObject Heart3;
+    public GameObject Health1;      // Defines health bar objects
+    public GameObject Health2;
+    public GameObject Health3;
 
 
-    void Start() {
-        HealthValue = 1;
+    void Start() {                  // Run when script first starts
+        HealthValue = 1;            // Defines health value of player during first log on
     }
 
-    void Update() {
+    void Update() {                         // Run continuously
         InternalHealth = HealthValue;
 
         if (HealthValue == 1) {
-            Heart1.SetActive(true);
+            Health1.SetActive(true);        // Activates first health interval if health is 1 
         }
         if (HealthValue == 2) {
-        Heart2.SetActive(true);
+            Health2.SetActive(true);        // Activates second health interval if health is 2
         }
         if (HealthValue == 3) {
-        Heart3.SetActive(true);
+            Health3.SetActive(true);        // Activates third health interval if health is 3
         }
 
     }
