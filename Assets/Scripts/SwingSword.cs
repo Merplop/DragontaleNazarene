@@ -9,7 +9,7 @@ public class SwingSword : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && SwordStatus == 0)
+        if (Input.GetButtonDown("Fire1") && SwordStatus == 0)       // Checks for fire action
         {
             StartCoroutine(SwingSwordFunction ());
         }
